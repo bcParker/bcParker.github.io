@@ -1,0 +1,161 @@
+<!-- Portfolio 
+	- Landing/Header Page
+	- Navbar
+	- About Me
+	- Projects Page
+		- Tutorial Website
+		- Creature Assignment
+		- API Project
+	- Contact Section
+
+	Additional Notes:
+		- Aesthetically pleasing, unique/professional
+		- CSS styling goes beyond minimum components
+		- Must use CSS Variables
+		- Use buttons (use CSS to make 'pretty')
+		- Thumbnails of projects
+		- Include info for employers to contact you (LinkedIn, Github, etc...)
+		- Working contact form from Formspree.io
+		- Free of spellin/grammar errors
+		- Completed in timely fashion
+		- Resume included
+		- Deployed to GitHub pages
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel='stylesheet' href='main.css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Chase Parker Portfolio</title>
+</head>
+<body>
+
+	<!---------- NavBar ---------->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Portfolio</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#linkOne">About Me <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#linkTwo">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#linkThree">Contact Me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#linkFour">External Links/Resume</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!---------- Jumbotron/Header/Parallax ---------->
+	<div class="jumbotron parallaxOne paraImage1">
+		<div class="container">
+			<h1 class="display-3">Chase Parker</h1>
+			<p class="lead">Junior Javascript & Web Developer</p>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid verticalCenter">
+		<div class="container">
+			<h1 class="display-4">Fluid jumbotron</h1>
+			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+		</div>
+	</div>
+
+	<!---------- Jumbotron/AboutMe/Parallax ---------->
+	<div class="jumbotron parallaxTwo paraImage2" id='linkOne'>
+		<div class="container">
+			<h1 class="display-3">About Me</h1>
+			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid verticalCenter">
+		<div class="container">
+			<h1 class="display-4">Fluid jumbotron</h1>
+			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+		</div>
+	</div>
+
+	<!---------- Jumbotron/Projects/Parallax ---------->
+	<div class="jumbotron parallaxThree paraImage3" id='linkTwo'>
+		<div class="container">
+			<h1 class="display-3">Projects</h1>
+			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid verticalCenter">
+		<div class="container">
+			<div class='row'>
+				<div class='col-md-6'>
+					<p>CSS Creature</p>
+					<a href="https://codepen.io/cparker8890/pen/xeqJaE" target='_blank'><img src='./assets/cssCreature.png' width='250' height='250'></a>
+				</div>
+				<div class='col-md-6'>
+					<p>Static Webpage</p>
+					<a href="" target='_blank'><img src=''></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!---------- Jumbotron/Contact/Parallax ---------->
+	<div class="jumbotron parallaxFour paraImage4" id='linkThree'>
+		<div class="container">
+			<h1 class="display-3">Contact Me</h1>
+			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid verticalCenter">
+		<div class='container'>
+			<div>
+				<form id="contactform"
+					action="https://formspree.io/cparker8890@gmail.com" method="POST">
+					<input type="text" name='name' placeholder="Your name">
+					<br/>
+					<input type="email" placeholder="Your email">
+					<br/>
+					<textarea placeholder="Your message"></textarea>
+					<br/>
+					<input type="submit" value="Send">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class='footer' id='linkFour'>
+		<p><a href='#'>Back to Top</a></p>
+		<i class="fa fa-github" style="font-size:48px"></i>
+		<i class="fa fa-linkedin-square" style="font-size:48px"></i>
+	</footer>
+
+	
+<!-- Bootstrap jquery & javascript plugins	--->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+</body>
+</html>
