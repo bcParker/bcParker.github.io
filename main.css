@@ -1,6 +1,8 @@
 /* ----- General Parallax Formatting ----- */
 .parallaxOne {
-	min-height: 800px;
+	min-height: 600px;
+	height: 100vh;
+	width: 100vw;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -8,21 +10,27 @@
 
 .parallaxTwo {
 	min-height: 600px;
-	/* background-attachment: fixed; */
+	height: 100vh;
+	width: 100vw;
+	background-attachment: fixed;
 	background-size: cover;
 	background-position: 50% 50%;
 }
 
 .parallaxThree {
 	min-height: 600px;
-	/* background-attachment: fixed; */
+	height: 100vh;
+	width: 100vw;
+	background-attachment: fixed;
 	background-size: cover;
 	background-position: 50% 50%;
 }
 
 .parallaxFour {
 	min-height: 600px;
-	/* background-attachment: fixed; */
+	height: 100vh;
+	width: 100vw;
+	background-attachment: fixed;
 	background-size: cover;
 	background-position: 50% 50%;
 }
@@ -94,7 +102,7 @@ line-height: 100px;
 
 /* ----- Parallax Images ----- */
 .paraImage1 {
-background-image: url("assets/asia-bicycle-building-315191\ \(1\).jpg");
+background-image: url("assets/asia-bicycle-building-315191.jpg");
 }
  
 .paraImage2 {
