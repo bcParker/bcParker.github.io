@@ -126,15 +126,19 @@
 	<div class="jumbotron jumbotron-fluid verticalCenter">
 		<div class='container'>
 			<div>
-				<form id="contactform"
-					action="https://formspree.io/cparker8890@gmail.com" method="POST">
-					<input type="text" name='name' placeholder="Your name">
+				<form action="https://formspree.io/cparker8890@gmail.com" method="POST">
+					<div class='form-group'>
+						<input type="text" class='form-control' name='name' placeholder="Your name">
+					</div>
 					<br/>
-					<input type="email" placeholder="Your email">
+					<div class='form-group'>
+						<input type="email" class='form-control' placeholder="Your email">
+					</div>
 					<br/>
-					<textarea placeholder="Your message"></textarea>
-					<br/>
-					<input type="submit" value="Send">
+					<div class='form-group'>
+						<textarea class='form-control' placeholder="Your message"></textarea>
+					</div>
+					<button type='submit' class='btn btn-primary' value='Send'>Sumbit</button>
 				</form>
 			</div>
 		</div>
