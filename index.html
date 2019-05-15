@@ -23,6 +23,7 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,12 +34,18 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Biryani:200|Open+Sans+Condensed:300|PT+Sans+Narrow"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 	<title>Chase Parker Portfolio</title>
 </head>
-<body>
+
+<body data-spy='scroll' data-target='.navbar' data-offset='180'>
 
 	<!---------- NavBar ---------->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<a class="navbar-brand" href="#">Portfolio</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +53,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="#linkOne">About Me <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
@@ -55,86 +62,86 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#linkThree">Contact Me</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#linkFour">External Links/Resume</a>
-				</li>
 			</ul>
 		</div>
 	</nav>
 
 	<!---------- Jumbotron/Header/Parallax ---------->
 	<div class="jumbotron parallaxOne paraImage1">
-		<div class="container">
-			<h1 class="display-3">Chase Parker</h1>
-			<p class="lead">Junior Javascript & Web Developer</p>
-		</div>
-	</div>
-
-	<div class="jumbotron jumbotron-fluid verticalCenter">
-		<div class="container">
-			<h1 class="display-4">Fluid jumbotron</h1>
-			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-		</div>
-	</div>
-
-	<!---------- Jumbotron/AboutMe/Parallax ---------->
-	<div class="jumbotron parallaxTwo paraImage2" id='linkOne'>
-		<div class="container">
-			<h1 class="display-3">About Me</h1>
-			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-		</div>
-	</div>
-
-	<div class="jumbotron jumbotron-fluid verticalCenter">
-		<div class="container">
-			<h1 class="display-4">Fluid jumbotron</h1>
-			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-		</div>
-	</div>
-
-	<!---------- Jumbotron/Projects/Parallax ---------->
-	<div class="jumbotron parallaxThree paraImage3" id='linkTwo'>
-		<div class="container">
-			<h1 class="display-3">Projects</h1>
-			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-		</div>
-	</div>
-
-	<div class="jumbotron jumbotron-fluid verticalCenter">
-		<div class="container">
+		<div id='textOne'>
 			<div class='row'>
-				<div class='col-md-6'>
-					<p>CSS Creature</p>
-					<a href="https://codepen.io/cparker8890/pen/xeqJaE" target='_blank'><img src='./assets/cssCreature.png' width='250' height='250'></a>
+				<div class='col-lg-12'>
+					<h1>Hello, <br> I'm Chase Parker</h1>
+					<p class="lead">Junior Javascript & Web Developer</p>
 				</div>
-				<div class='col-md-6'>
-					<p>Static Webpage</p>
-					<a href="https://bcparker.github.io/staticWebPage2019/" target='_blank'><img src='./assets/Screenshot (2).png' width='250' height='250'></a>
+			</div>
+		</div>
+	</div>
+	
+	<!------------------About Me-------------------->
+	<div class="jumbotron jumbotron-fluid verticalCenter" id='linkOne'>
+		<div class="container">
+			<h1 class="display-4">About Me</h1>
+			<p class="lead">Hello, I'm Chase Parker. I'm an aspiring Web Developer and Designer. I'm well versed in the front and back end of web development and my previous experience in the arts and design has given me a strong understanding of clean design principles. I'm also a recent graduate of Rasmussen College with a B.S. in Computer Science and an Associates in Software
+			Application Development.</p>
+			<p class='lead'>In my spare time, when I'm not designing my next project, you can find me hanging with my friends, playing video games, drawing, or playing guitar. </p>
+			<p class='lead'>You can find my some of my work <a href='https://github.com/bcParker?tab=repositories' target='_blank'>here</a> on GitHub. My <a href='https://www.linkedin.com/in/benjamin-chase-parker' target='_blank'>LinkedIn</a> is another place to get in touch with me. Here's also a link to my <a href='https://drive.google.com/open?id=0B9f7ijlFsu_9dWpDX3pBeVZrd2RfdExaUlpnWE9kQ0toeHJV' target='_blank'>resume</a>.</p>
+		</div> 
+	</div>
+
+	<div class="jumbotron parallaxTwo paraImage2" id='linkTwo'>
+		<div class="container">
+			<h1 class='display-4'>Projects</h1>
+			<br>
+			<div class="container" id='cardCont'>
+				<div class='row'>
+					<div class='col-md-4'>
+						<div class="card" style="width: 18rem;">
+							<img src="./assets/cssCreature.png" class="card-img-top" alt="cssCreature">
+							<div class="card-body">
+								<h5 class="card-title">CSS Creature</h5>
+								<a href='https://codepen.io/cparker8890/pen/xeqJaE' class="btn btn-primary" target='_blank'>See This</a>
+							</div>
+						</div>
+					</div>
+					<div class='col-md-4'>
+						<div class="card" style="width: 18rem;">
+							<img src="./assets/apiProject.png" class="card-img-top" alt="cssCreature">
+							<div class="card-body">
+								<h5 class="card-title">API Project</h5>
+								<a href='https://bcp-api-project-2019.firebaseapp.com/?' class="btn btn-primary" target='_blank'>See This</a>
+							</div>
+						</div>
+					</div>
+					<div class='col-md-4'>
+						<div class="card" style="width: 18rem;">
+							<img src="./assets/Screenshot (2).png" class="card-img-top" alt="cssCreature">
+							<div class="card-body">
+								<h5 class="card-title">Static Webpage</h5>
+								<a href='https://bcparker.github.io/staticWebPage2019/' class="btn btn-primary" target='_blank'>See This</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!---------- Jumbotron/Contact/Parallax ---------->
-	<div class="jumbotron parallaxFour paraImage4" id='linkThree'>
-		<div class="container">
-			<h1 class="display-3">Contact Me</h1>
-			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-		</div>
-	</div>
-
-	<div class="jumbotron jumbotron-fluid verticalCenter">
+	<!---------- Jumbotron/Parallax/ContactMeForm ---------->
+	<div class="jumbotron jumbotron-fluid verticalCenter" id='linkThree'>
 		<div class='container'>
+			<h1 class='display-4'>Contact Me</h1>
+			<br/>
 			<div>
 				<form action="https://formspree.io/cparker8890@gmail.com" method="POST">
 					<div class='form-group'>
 						<input type="text" class='form-control' name='name' placeholder="Your name">
 					</div>
-					<br/>
+					<br />
 					<div class='form-group'>
 						<input type="email" class='form-control' placeholder="Your email">
 					</div>
-					<br/>
+					<br />
 					<div class='form-group'>
 						<textarea class='form-control' placeholder="Your message"></textarea>
 					</div>
@@ -144,22 +151,27 @@
 		</div>
 	</div>
 
-	<footer class='footer' id='linkFour'>
-		<p><a href='#'>Back to Top</a></p>
-		<i class="fa fa-github" style="font-size:48px"></i>
-		<i class="fa fa-linkedin-square" style="font-size:48px"></i>
+	<footer class='footer'>
+		<p><a href='#' id='scrollTop'>Back to Top</a></p>
+		<div class='row'>
+			<div class='col-md-4'><a href='https://github.com/bcParker?tab=repositories' class="fab fa-github" target='_blank' style="font-size:48px"></a></div>
+			<div class='col-md-4'><a href='https://www.linkedin.com/in/benjamin-chase-parker' class="fab fa-linkedin" target='_blank' style='font-size:48px'></a></div>
+			<div class='col-md-4'><a href='https://drive.google.com/open?id=0B9f7ijlFsu_9dWpDX3pBeVZrd2RfdExaUlpnWE9kQ0toeHJV' class='fas fa-file-alt' target='_blank' style='font-size: 48px'></a></div>
+		</div>
 	</footer>
 
-	
-<!-- Bootstrap jquery & javascript plugins	--->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-	crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-	crossorigin="anonymous"></script>
+	<!-- https://drive.google.com/open?id=0B9f7ijlFsu_9dWpDX3pBeVZrd2RfdExaUlpnWE9kQ0toeHJV -->
+
+	<!-- Bootstrap jquery & javascript plugins	--->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
