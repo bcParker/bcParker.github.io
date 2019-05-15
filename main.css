@@ -107,6 +107,16 @@ background-image: url("assets/evening-japan-japanese-1633791.jpg");}
 	padding-left: 50px;
 }
 
+.lead:first-letter {
+	float: left;
+	font-size: 55px;
+	line-height: 1;
+	font-weight: bold;
+	margin-right: 9px;
+	color: rgb(45, 112, 201);
+	font-family: "Open Sans Condensed", sans-serif;
+	text-shadow: rgb(11, 59, 99) .05em .05em;
+}
 
 /* ----- Footer Formatting ----- */
 .footer {
